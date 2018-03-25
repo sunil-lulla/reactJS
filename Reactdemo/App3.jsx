@@ -1,6 +1,6 @@
 import React from 'react';
 
-Class App extends React.Component {
+class App extends React.Component {
 	constructor(){
 		super();
 		this.state = {
@@ -31,7 +31,7 @@ Class App extends React.Component {
 					<table>
 						<tbody>
 							{this.state.data.map((person, i) => <TableRow key = {i} 
-                     data = {person} />)
+                     dat = {person} />)
 							}
 						</tbody>
 					</table>
@@ -54,9 +54,9 @@ class TableRow extends React.Component {
 	render(){
 		return (
 				<tr>
-					<td>{this.props.data.id}</td>
-		            <td>{this.props.data.name}</td>
-		            <td>{this.props.data.age}</td>
+					<td>{this.props.dat.id}</td>
+		            <td>{this.props.dat.name}</td>
+		            <td>{this.props.dat.age}</td>
 				</tr>
 		)
 	}
